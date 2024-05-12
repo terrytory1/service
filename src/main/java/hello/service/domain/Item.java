@@ -1,9 +1,8 @@
-package hello.service.domain.item;
+package hello.service.domain;
 
 import lombok.Getter;
-import lombok.Setter;
 
-@Getter @Setter
+@Getter
 public class Item {
 
     private Long id;
@@ -15,6 +14,18 @@ public class Item {
 
     public Item(String title, String text) {
         this.title = title;
+        this.text = text;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setText(String text) {
         this.text = text;
     }
 }
